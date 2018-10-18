@@ -1,0 +1,6 @@
+##Created by touch-gitignore##
+#VIM#
+*.swp
+*.swo
+
+__pycache__/
