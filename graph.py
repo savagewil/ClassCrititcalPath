@@ -18,6 +18,16 @@ class graph:
             for val in self.adjList[key]:
                 f.write(key + " " + val + "\n")
 
+    def addNode(self, nodeName):
+        self.adjList[key] = []
+
+    def connect(self, source, dest):
+        if self.adjList[source] == []:
+            self.adjList[source] = [dest]
+        else:
+            if dest not in self.adjList[source]:
+                self.adjList[source].append(dest)
+
     def printAdjList(self):
         for key in self.adjList:
             print(key + ", " +  str(self.adjList[key]))
