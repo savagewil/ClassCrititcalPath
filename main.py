@@ -4,8 +4,7 @@ def shell():
     while command.to_lower() != "q":
         command = input("> ")
         if command == "critical path":
-
-        print(command)
+            print(command)
 
 def main():
     g = graph()
